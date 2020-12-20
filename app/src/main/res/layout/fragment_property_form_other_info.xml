@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/content_padding"
+    android:paddingLeft="@dimen/content_padding"
+    android:paddingTop="@dimen/content_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/content_padding"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0,1">
+
+            <TableRow>
+
+                <TextView
+                    style="?android:attr/listSeparatorTextViewStyle"
+                    android:layout_span="2"
+                    android:text="@string/brokerage"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/itemViewText"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="@string/type" />
+
+                <Spinner
+                    android:id="@+id/spnBrokerageType"
+                    android:entries="@array/brokerage_type" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/itemViewText"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="0dp"
+                    android:text="@string/amount" />
+
+                <EditText
+                    android:id="@+id/txtBrokerageValue"
+                    android:ems="10"
+                    android:hint="@string/amount"
+                    android:inputType="numberDecimal"></EditText>
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            style="?android:attr/listSeparatorTextViewStyle"
+            android:layout_marginTop="8dp"
+            android:layout_span="2"
+            android:text="@string/metadata"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/groupKeyValPairs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <include android:id="@+id/btnAddKeyVal"
+            layout="@layout/widget_button_add" />
+    </LinearLayout>
+</ScrollView>

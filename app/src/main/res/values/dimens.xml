@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="content_margin">8dp</dimen>
+    <dimen name="content_padding">16dp</dimen>
+    <dimen name="thumbnail_size">64dp</dimen>
+    <dimen name="customer_list_thumbnail_size">64dp</dimen>
+    <dimen name="marker_width">8dp</dimen>
+</resources>

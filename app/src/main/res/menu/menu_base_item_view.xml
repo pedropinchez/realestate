@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:saovietcrm="http://schemas.android.com/apk/res-auto" >
+
+    <item android:id="@+id/action_edit"
+          android:icon="@drawable/ic_edit"
+          saovietcrm:showAsAction="ifRoom|collapseActionView"
+          android:title="@string/edit"/>
+
+    <item android:id="@+id/action_delete"
+          android:icon="@drawable/ic_discard"
+          saovietcrm:showAsAction="ifRoom|collapseActionView"
+          android:title="@string/delete"/>
+</menu>

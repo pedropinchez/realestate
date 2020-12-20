@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/groupBasicInfo"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/listSeparatorTextView"
+        android:text="@string/detailed_info"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="0"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/price"/>
+
+            <TextView
+                android:id="@+id/txtPrice"
+                style="@style/itemViewText"
+                android:text="@string/code"/>
+        </TableRow>
+
+
+        <!-- Postfix -->
+        <TableRow android:layout_marginBottom="8dp">
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/price_postfix"/>
+
+            <TextView
+                android:id="@+id/txtPricePostfix"
+                style="@style/itemViewText"
+                android:text="@string/price_postfix"/>
+        </TableRow>
+
+        <!-- Area -->
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:text="@string/covered_area"/>
+
+            <TextView
+                android:id="@+id/txtCoveredArea"
+                style="@style/itemViewText"
+                android:text="@string/covered_area"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/covered_area"/>
+
+            <TextView
+                android:id="@+id/txtCarpetArea"
+                style="@style/itemViewText"
+                android:text="@string/carpet_area"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="8dp">
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/builtup_area"/>
+
+            <TextView
+                android:id="@+id/txtBuiltupArea"
+                style="@style/itemViewText"
+                android:text="@string/builtup_area"/>
+        </TableRow>
+
+        <!-- Others -->
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/num_bedrooms"/>
+
+            <TextView
+                android:id="@+id/txtBedrooms"
+                style="@style/itemViewText"
+                android:text="@string/num_bedrooms"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/num_bathrooms"/>
+
+            <TextView
+                android:id="@+id/txtBathrooms"
+                style="@style/itemViewText"
+                android:text="@string/num_bathrooms"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/num_balconies"/>
+
+            <TextView
+                android:id="@+id/txtBalconies"
+                style="@style/itemViewText"
+                android:text="@string/builtup_area"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/num_garages"/>
+
+            <TextView
+                android:id="@+id/txtGarages"
+                style="@style/itemViewText"
+                android:text="@string/num_garages"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/num_parking_lots"/>
+
+            <TextView
+                android:id="@+id/txtNumParkingLots"
+                style="@style/itemViewText"
+                android:text="@string/num_parking_lots"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="8dp">
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/floor_number"/>
+
+            <TextView
+                android:id="@+id/txtFloorNumber"
+                style="@style/itemViewText"
+                android:text="@string/floor_number"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/total_floor"/>
+
+            <TextView
+                android:id="@+id/txtTotalFloor"
+                style="@style/itemViewText"
+                android:text="@string/total_floor"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/construction_year"/>
+
+            <TextView
+                android:id="@+id/txtConstructionYear"
+                style="@style/itemViewText"
+                android:text="@string/construction_year"/>
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="8dp">
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/furnishing"/>
+
+            <TextView
+                android:id="@+id/txtFurnishing"
+                style="@style/itemViewText"
+                android:text="@string/furnishing"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/facing"/>
+
+            <TextView
+                android:id="@+id/txtFacing"
+                style="@style/itemViewText"
+                android:text="@string/facing"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/facilities"/>
+
+            <TextView
+                android:id="@+id/txtFacility"
+                style="@style/itemViewText"
+                android:text="@string/facilities"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/amenities"/>
+
+            <TextView
+                android:id="@+id/txtAmenity"
+                style="@style/itemViewText"
+                android:text="@string/amenities"/>
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

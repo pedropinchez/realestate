@@ -1,0 +1,21 @@
+<resources>
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <!-- Branding color -->
+    <color name="branding_red">#a2214b</color>
+    <color name="branding_red_light">#E1393D</color>
+    <color name="branding_blue">#0152a1</color>
+    <color name="branding_yellow_dark">#DEB405</color>
+    <color name="branding_yellow_light">#FFDF1A</color>
+
+    <!-- Gray -->
+    <color name="gray_lighter">#e0e0e0</color>
+    <color name="gray_light">#d3d3d3</color>
+    <color name="gray_medium">#66000000</color>
+    <color name="gray_dark">#333333</color>
+
+    <color name="text_color">@color/black</color>
+    <color name="list_header_bg">@color/gray_light</color>
+</resources>

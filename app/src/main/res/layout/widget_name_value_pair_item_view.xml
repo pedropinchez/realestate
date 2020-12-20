@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/txtName"
+        style="@style/itemViewText"
+        android:fontFamily="sans-serif-light"
+        android:paddingTop="0dp"
+        android:text="@string/price"/>
+
+    <TextView
+        android:id="@+id/txtValue"
+        style="@style/itemViewText"
+        android:text="@string/code"/>
+</TableRow>
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Spinner
+        android:id="@+id/spnTime"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:entries="@array/reminder_time_texts"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/btnRemove"
+        android:layout_gravity="center_vertical"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/selector_with_transparency"
+        android:src="@drawable/brokermate_ic_remove_red" />
+
+</LinearLayout>

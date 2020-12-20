@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/groupBasicInfo"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/listSeparatorTextView"
+        android:text="@string/other_info"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="0"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/brokerage"/>
+
+            <TextView
+                android:id="@+id/txtBrokerageValue"
+                style="@style/itemViewText"
+                android:text="@string/value"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

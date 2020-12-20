@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="order_type_names">
+        <item>@string/order_type</item>
+        <item>@string/order_type_retail</item>
+        <item>@string/order_type_wholesale</item>
+    </array>
+    
+    <array name="customer_type_names">
+        <item>@string/customer_type</item>
+        <item>@string/customer_type_private</item>
+        <item>@string/customer_type_company</item>
+    </array>
+    <array name="languages">
+        <item>@string/language</item>
+        <item>@string/english</item>
+        <item>@string/vietnamese</item>
+    </array>
+    
+    <array name="genders">
+        <item>@string/user_gender</item>
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </array>
+    
+    <string-array name="customer_dropdown_items">
+        <item>@string/show_all</item>
+        <item>@string/top_20_order_value</item>
+        <item>@string/top_20_rated</item>
+    </string-array>
+    
+    <string-array name="order_breakdowns">
+        <item>@string/breakdown_daily</item>
+        <item>@string/breakdown_weekly</item>
+        <item>@string/breakdown_monthly</item>
+        <item>@string/breakdown_yearly</item>
+    </string-array>
+    <string-array name="facing">
+        <item>@string/facing</item>
+        <item>@string/facing_north</item>
+        <item>@string/facing_south</item>
+        <item>@string/facing_west</item>
+        <item>@string/facing_east</item>
+        <item>@string/facing_north_west</item>
+        <item>@string/facing_north_east</item>
+        <item>@string/facing_south_west</item>
+        <item>@string/facing_south_east</item>
+    </string-array>
+    <string-array name="furnishing">
+        <item>@string/furnishing</item>
+        <item>@string/furnished</item>
+        <item>@string/semi_furnished</item>
+        <item>@string/unfurnished</item>
+    </string-array>
+    <string-array name="reminder_time_texts">
+        <item>@string/ontime</item>
+        <item>@string/min_before_1</item>
+        <item>@string/min_before_5</item>
+        <item>@string/min_before_10</item>
+        <item>@string/min_before_15</item>
+        <item>@string/min_before_20</item>
+        <item>@string/min_before_25</item>
+        <item>@string/min_before_30</item>
+        <item>@string/min_before_45</item>
+        <item>@string/hour_before_1</item>
+        <item>@string/hour_before_2</item>
+        <item>@string/hour_before_3</item>
+        <item>@string/day_before_1</item>
+        <item>@string/day_before_2</item>
+        <item>@string/week_before_1</item>
+    </string-array>
+    <integer-array name="reminder_time_values">
+        <item>0</item>
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>25</item>
+        <item>30</item>
+        <item>45</item>
+        <item>60</item>
+        <item>120</item>
+        <item>180</item>
+        <item>1440</item>
+        <item>2880</item>
+        <item>10080</item>
+    </integer-array>
+    <string-array name="appointments_due_filter">
+        <item>@string/all</item>
+        <item>@string/past_appointments</item>
+        <item>@string/coming_appointments</item>
+    </string-array>
+    <string-array name="brokerage_type">
+        <item>@string/fixed</item>
+        <item>@string/percentage</item>
+    </string-array>
+    <string-array name="property_status_type">
+        <item>@string/active</item>
+        <item>@string/inactive</item>
+    </string-array>
+</resources>

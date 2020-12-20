@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/content_padding"
+    android:paddingLeft="@dimen/content_padding"
+    android:paddingBottom="@dimen/content_padding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_marginRight="@dimen/content_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/imgUserPic"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:background="@color/gray_light" />
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtName"
+                    style="@style/itemViewText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/name" />
+
+                <android.support.v7.internal.widget.CompatTextView
+                    style="@style/itemViewSubLabel"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:id="@+id/txtType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="0dp"
+                    android:layout_marginTop="2dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:text="@string/customer_type_private" />
+
+                <!-- Action buttons layout -->
+                <LinearLayout
+                    android:layout_marginLeft="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageButton
+                        android:id="@+id/btnCall"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/selector_with_transparency"
+                        android:clickable="true"
+                        android:src="@drawable/brokermate_ic_call_red" />
+
+                    <View android:layout_width="1dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/gray_light"/>
+
+                    <ImageButton
+                        android:id="@+id/btnSMS"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/selector_with_transparency"
+                        android:clickable="true"
+                        android:src="@drawable/brokermate_ic_message_red" />
+
+                    <View android:layout_width="1dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/gray_light"/>
+
+                    <ImageButton
+                        android:id="@+id/btnSendEmail"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_marginLeft="4dp"
+                        android:background="@drawable/selector_with_transparency"
+                        android:clickable="true"
+                        android:src="@drawable/brokermate_ic_email_red" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtNote"
+            style="@style/itemViewText"
+            android:background="@color/gray_lighter"
+            android:fontFamily="sans-serif-light"
+            android:padding="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/note" />
+
+        <LinearLayout
+            android:id="@+id/groupAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:text="@string/address" />
+
+            <LinearLayout
+                android:id="@+id/groupLocality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtLocality"
+                    style="@style/itemViewText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address" />
+
+                <android.support.v7.internal.widget.CompatTextView
+                    style="@style/itemViewSubLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/locality" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtAddress"
+                style="@style/itemViewText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/address" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+        <TextView
+            style="@style/listSeparatorTextView"
+            android:text="@string/email"/>
+
+            <TextView
+                android:id="@+id/txtEmail"
+                style="@style/itemViewText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/email" />
+
+            <LinearLayout
+                android:id="@+id/groupWorkEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtWorkEmail"
+                    style="@style/itemViewText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_email" />
+
+                <android.support.v7.internal.widget.CompatTextView
+                    style="@style/itemViewSubLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_email" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:text="@string/phone"/>
+
+            <LinearLayout
+                android:id="@+id/groupMobilePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtMobilePhone"
+                    style="@style/itemViewText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_phone" />
+
+                <android.support.v7.internal.widget.CompatTextView
+                    style="@style/itemViewSubLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mobile_phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/groupWorkPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtWorkPhone"
+                    style="@style/itemViewText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_phone" />
+
+                <android.support.v7.internal.widget.CompatTextView
+                    style="@style/itemViewSubLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/work_phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/groupHomePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txtHomePhone"
+                    style="@style/itemViewText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_phone" />
+
+                <android.support.v7.internal.widget.CompatTextView
+                    style="@style/itemViewSubLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/home_phone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/listSeparatorTextView"
+            android:text="@string/gender_dob"/>
+
+        <TextView
+            android:id="@+id/txtGender"
+            style="@style/itemViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_gender" />
+
+        <TextView
+            android:id="@+id/txtDoB"
+            style="@style/itemViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_dob" />
+
+        <LinearLayout
+            android:id="@+id/groupCompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:text="@string/company"/>
+
+            <TextView
+                android:id="@+id/txtCompany"
+                style="@style/itemViewText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/company" />
+
+            <TextView
+                android:id="@+id/txtDepartment"
+                style="@style/itemViewText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/department" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                style="@style/itemViewText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

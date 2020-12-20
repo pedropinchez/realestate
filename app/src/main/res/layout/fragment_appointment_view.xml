@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/content_padding"
+    android:paddingLeft="@dimen/content_padding"
+    android:paddingTop="@dimen/content_padding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/content_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/txtNote"
+            style="@style/itemViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/gray_lighter"
+            android:fontFamily="sans-serif-light"
+            android:padding="8dp"
+            android:text="@string/note" />
+
+        <LinearLayout
+            android:id="@+id/groupCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:text="@string/customer" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgCustomerPic"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:background="@color/gray_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtCustomerName"
+                        style="@style/itemViewText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingTop="0dp"
+                        android:text="@string/name"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtCustomerType"
+                        style="@style/itemViewSubLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:paddingTop="0dp"
+                        android:text="@string/customer_type_private"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/groupTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:text="@string/time" />
+
+            <TextView
+                android:id="@+id/txtFromTime"
+                style="@style/itemViewText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/from_time" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/itemViewSubLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/from_time" />
+
+            <TextView
+                android:id="@+id/txtToTime"
+                style="@style/itemViewText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/to_time" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/itemViewSubLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/to_time" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:text="@string/location" />
+
+            <TextView
+                android:id="@+id/txtLocation"
+                style="@style/itemViewText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/address" />
+
+            <fragment
+                android:id="@+id/mapFragment"
+                class="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/groupReminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:text="@string/reminder" />
+
+            <LinearLayout
+                android:id="@+id/groupReminderTimes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

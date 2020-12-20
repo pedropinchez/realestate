@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/content_padding"
+    android:paddingLeft="@dimen/content_padding"
+    android:paddingTop="@dimen/content_padding">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/content_padding"
+        android:shrinkColumns="1">
+
+        <TableRow>
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_span="2"
+                android:text="@string/price"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/price_unit" />
+
+            <EditText
+                android:id="@+id/txtPriceUnit"
+                style="?android:attr/spinnerStyle"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/price_unit"
+                android:inputType="none"
+                android:paddingLeft="12dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/price" />
+
+            <EditText
+                android:id="@+id/txtPrice"
+                android:ems="10"
+                android:hint="@string/price"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/price_postfix" />
+
+            <EditText
+                android:id="@+id/txtPricePostfix"
+                android:ems="10"
+                android:hint="@string/price_postfix" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_marginTop="8dp"
+                android:layout_span="2"
+                android:text="@string/area"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/price_unit" />
+
+            <EditText
+                android:id="@+id/txtAreaUnit"
+                style="?android:attr/spinnerStyle"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/area_unit"
+                android:inputType="none"
+                android:paddingLeft="12dp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/covered_area" />
+
+            <EditText
+                android:id="@+id/txtCoveredArea"
+                android:ems="10"
+                android:hint="@string/area"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/carpet_area" />
+
+            <EditText
+                android:id="@+id/txtCarpetArea"
+                android:ems="10"
+                android:hint="@string/area"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/builtup_area" />
+
+            <EditText
+                android:id="@+id/txtBuiltupArea"
+                android:ems="10"
+                android:hint="@string/area"
+                android:inputType="numberDecimal" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:layout_marginTop="8dp"
+                android:layout_span="2"
+                android:text="@string/others"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/num_bedrooms" />
+
+            <EditText
+                android:id="@+id/txtBedrooms"
+                android:ems="10"
+                android:hint="@string/number"
+                android:inputType="number">
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/num_bathrooms" />
+
+            <EditText
+                android:id="@+id/txtBathrooms"
+                android:ems="10"
+                android:hint="@string/number"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/num_balconies" />
+
+            <EditText
+                android:id="@+id/txtBalconies"
+                android:ems="10"
+                android:hint="@string/number"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/num_garages" />
+
+            <EditText
+                android:id="@+id/txtGarages"
+                android:ems="10"
+                android:hint="@string/number"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/num_parking_lots" />
+
+            <EditText
+                android:id="@+id/txtNumParkingLots"
+                android:ems="10"
+                android:hint="@string/number"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/floor_number" />
+
+            <EditText
+                android:id="@+id/txtFloorNumber"
+                android:ems="10"
+                android:hint="@string/number"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/total_floor" />
+
+            <EditText
+                android:id="@+id/txtTotalFloor"
+                android:ems="10"
+                android:hint="@string/number"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/construction_year" />
+
+            <EditText
+                android:id="@+id/txtConstructionYear"
+                android:ems="10"
+                android:hint="@string/year"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/furnishing" />
+
+            <Spinner
+                android:id="@+id/spnFurnishing"
+                android:entries="@array/furnishing"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="0dp"
+                android:text="@string/facing_orientation" />
+
+            <Spinner
+                android:id="@+id/spnFacing"
+                android:entries="@array/facing"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/facilities" />
+
+            <EditText
+                android:id="@+id/txtFacility"
+                style="?android:attr/spinnerStyle"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/facilities"
+                android:inputType="none"
+                android:paddingLeft="12dp" />
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                style="@style/itemViewText"
+                android:paddingTop="0dp"
+                android:text="@string/amenities" />
+
+            <EditText
+                android:id="@+id/txtAmenity"
+                style="?android:attr/spinnerStyle"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/amenities"
+                android:inputType="none"
+                android:paddingLeft="12dp" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

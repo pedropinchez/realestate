@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_lighter"
+    android:paddingBottom="@dimen/content_margin"
+    android:paddingLeft="@dimen/content_margin"
+    android:paddingTop="@dimen/content_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/content_margin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_property_blue_no_padding" />
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@null"
+                android:maxLines="1"
+                android:lines="1"
+                android:ellipsize="marquee"
+                android:text="@string/properties"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/branding_blue" />
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:text="@string/recent"
+                android:textSize="12sp"
+                android:textColor="@color/gray_medium" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/branding_blue" />
+
+        <FrameLayout
+            android:id="@+id/frameProperty"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_appointment_blue_no_padding" />
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:lines="1"
+                android:ellipsize="marquee"
+                android:background="@null"
+                android:text="@string/appointments"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/branding_blue" />
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:text="@string/up_coming"
+                android:textSize="12sp"
+                android:textColor="@color/gray_medium" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/branding_blue" />
+
+        <FrameLayout
+            android:id="@+id/frameAppointment"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_customer_blue_no_padding" />
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:lines="1"
+                android:ellipsize="marquee"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="@string/customers"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/branding_blue" />
+
+            <TextView
+                style="@style/listSeparatorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:text="@string/recent"
+                android:textSize="12sp"
+                android:textColor="@color/gray_medium" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/branding_blue" />
+
+        <FrameLayout
+            android:id="@+id/frameCustomer"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </FrameLayout>
+
+    </LinearLayout>
+</ScrollView>
